@@ -1,6 +1,8 @@
-import { mobile } from "./Movil";
+"use strict";
+exports.__esModule = true;
+var Movil_1 = require("./Movil");
 // Nokia3210
-let movil0 = new mobile("","","",0,"",false,0,0);
+var movil0 = new Movil_1.mobile("", "", "", 0, "", false, 0, 0);
 movil0.setName("Nokia3210");
 movil0.setModel("3210");
 movil0.settrademark("Nokia");
@@ -13,7 +15,7 @@ movil0.setPrice(150);
 movil0.setIs5G(true);
 movil0.setCameraNumber(5);
 // Iphone3G
-let movil1 = new mobile("","","",0,"",false,0,0);
+var movil1 = new Movil_1.mobile("", "", "", 0, "", false, 0, 0);
 movil1.setName("Iphone3G");
 movil1.setModel("3G");
 movil1.settrademark("Apple");
@@ -23,7 +25,7 @@ movil1.setIs5G(false);
 movil1.setCameraNumber(3);
 movil1.setPrice(290);
 // Galaxy10
-let movil2 = new mobile("","","",0,"",false,0,0);
+var movil2 = new Movil_1.mobile("", "", "", 0, "", false, 0, 0);
 movil2.setName("Samsung Galaxy 10");
 movil2.setModel("Galaxy 10");
 movil2.settrademark("Samsung");
@@ -33,8 +35,8 @@ movil2.setIs5G(true);
 movil2.setCameraNumber(3);
 movil2.setPrice(350);
 // Mostrar array
-let arrMovil :Array<mobile> = [movil0, movil1, movil2]
-for (let i = 0; i < arrMovil.length; i++) {
+var arrMovil = [movil0, movil1, movil2];
+for (var i = 0; i < arrMovil.length; i++) {
     console.log(arrMovil[i].getName());
     console.log(arrMovil[i].getModel());
     console.log(arrMovil[i].gettrademark());
